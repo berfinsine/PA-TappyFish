@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4528823892150379932}
   m_Layer: 0
   m_Name: Obstacle_1
-  m_TagString: Untagged
+  m_TagString: Column
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4528823892150379931}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -3.86, z: 0}
+  m_LocalPosition: {x: 0, y: -3.77, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -72,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1031212169
-  m_SortingLayer: 2
+  m_SortingLayerID: 87318283
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -1662512567, guid: 1da1e0c0fcc56794b9697e84bfbd98f0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -152,7 +152,7 @@ GameObject:
   - component: {fileID: 4528823892392114384}
   m_Layer: 0
   m_Name: Obstacle_2
-  m_TagString: Untagged
+  m_TagString: Column
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -165,7 +165,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4528823892392114383}
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 10.5, z: 0}
+  m_LocalPosition: {x: -0, y: 10.29, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -286,9 +286,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4528823892500340969}
   - component: {fileID: 7861302779401984920}
+  - component: {fileID: 8386112866933750712}
   m_Layer: 0
   m_Name: Obstacle
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -336,3 +337,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.48949242, y: 4.1653566}
   m_EdgeRadius: 0
+--- !u!114 &8386112866933750712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4528823892500340968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6c61d1648d5c0947b4970ebeb6d9d78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2.5
