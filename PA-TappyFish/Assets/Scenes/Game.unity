@@ -179,7 +179,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &127305497
 GameObject:
@@ -212,7 +212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOverPanel: {fileID: 1369801345}
   getReadyImg: {fileID: 215025724}
-  score: {fileID: 0}
+  score: {fileID: 1971162234}
 --- !u!4 &127305499
 Transform:
   m_ObjectHideFlags: 0
@@ -226,7 +226,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &157035906
 GameObject:
@@ -860,6 +860,7 @@ GameObject:
   - component: {fileID: 656957228}
   - component: {fileID: 656957227}
   - component: {fileID: 656957226}
+  - component: {fileID: 656957230}
   m_Layer: 0
   m_Name: Fish1
   m_TagString: Untagged
@@ -983,10 +984,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14406cef16b770c4a838abc39030db31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 15
   score: {fileID: 1971162236}
   gameManager: {fileID: 127305498}
-  obstacleSpawner: {fileID: 0}
+  obstacleSpawner: {fileID: 853717080}
   fishDied: {fileID: -321327090, guid: 1da1e0c0fcc56794b9697e84bfbd98f0, type: 3}
   swim: {fileID: 656957228}
   hit: {fileID: 656957227}
@@ -1299,6 +1300,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &656957230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656957219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b44d2980f0704fd42ae1bfecd7f8f17a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverPanel: {fileID: 1369801345}
+  getReadyImg: {fileID: 215025724}
+  score: {fileID: 1971162234}
 --- !u!1 &736979760
 GameObject:
   m_ObjectHideFlags: 0
@@ -1448,7 +1464,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1342871991
 GameObject:
@@ -2039,7 +2055,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 127305498}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: RestartBtn
+        m_MethodName: restartBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
